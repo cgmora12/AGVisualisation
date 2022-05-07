@@ -31,3 +31,6 @@ java -jar ag.jar csv2api csvFileName
 ## Authors
 
 * **César González Mora** 
+* **Irene Garrigós** 
+* **Jose Jacobo** 
+* **Jose-Norberto Mazón** 
