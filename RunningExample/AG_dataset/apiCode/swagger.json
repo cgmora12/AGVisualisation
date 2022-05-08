@@ -1,0 +1,836 @@
+{
+  "basePath" : "/",
+  "paths" : {
+    "/Web/{Web}" : {
+      "get" : {
+        "summary" : "GET Web",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getWeb",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "http://mestreacasa.gva.es/web/4601915500",
+          "in" : "path",
+          "name" : "Web",
+          "description" : "Web",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Comarca/{Comarca}" : {
+      "get" : {
+        "summary" : "GET Comarca",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getComarca",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "EL RINCON DE ADEMUZ",
+          "in" : "path",
+          "name" : "Comarca",
+          "description" : "Comarca",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Regimen/{Regimen}" : {
+      "get" : {
+        "summary" : "GET Regimen",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getRegimen",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "PUBLICO",
+          "in" : "path",
+          "name" : "Regimen",
+          "description" : "Regimen",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Email/{Email}" : {
+      "get" : {
+        "summary" : "GET Email",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getEmail",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "46019155@edu.gva.es",
+          "in" : "path",
+          "name" : "Email",
+          "description" : "Email",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/" : {
+      "get" : {
+        "summary" : "GET dataset",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getdataset",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Codigo",
+          "description" : "Codigo",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "Nombre",
+          "description" : "Nombre",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Regimen",
+          "description" : "Regimen",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Direccion",
+          "description" : "Direccion",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Localidad",
+          "description" : "Localidad",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Telefono",
+          "description" : "Telefono",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "Fax",
+          "description" : "Fax",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "Latitud",
+          "description" : "Latitud",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Longitud",
+          "description" : "Longitud",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Titularidad",
+          "description" : "Titularidad",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "CIF",
+          "description" : "CIF",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Comarca",
+          "description" : "Comarca",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Email",
+          "description" : "Email",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Web",
+          "description" : "Web",
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "Servicios_complementarios",
+          "description" : "Servicios_complementarios",
+          "type" : "string"
+        } ]
+      }
+    },
+    "/visualisation" : {
+      "get" : {
+        "summary" : "GET visualisation charts",
+        "produces" : [ "text/html" ],
+        "operationId" : "getvisualisation",
+        "description" : "Get visualisation charts of the data",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        } ]
+      }
+    },
+    "/Telefono/{Telefono}" : {
+      "get" : {
+        "summary" : "GET Telefono",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getTelefono",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "978787000",
+          "in" : "path",
+          "name" : "Telefono",
+          "description" : "Telefono",
+          "type" : "integer",
+          "required" : true
+        } ]
+      }
+    },
+    "/Fax/{Fax}" : {
+      "get" : {
+        "summary" : "GET Fax",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getFax",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "978787001",
+          "in" : "path",
+          "name" : "Fax",
+          "description" : "Fax",
+          "type" : "integer",
+          "required" : true
+        } ]
+      }
+    },
+    "/Longitud/{Longitud}" : {
+      "get" : {
+        "summary" : "GET Longitud",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getLongitud",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "-1,285779",
+          "in" : "path",
+          "name" : "Longitud",
+          "description" : "Longitud",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Titularidad/{Titularidad}" : {
+      "get" : {
+        "summary" : "GET Titularidad",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getTitularidad",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "GENERALITAT VALENCIANA",
+          "in" : "path",
+          "name" : "Titularidad",
+          "description" : "Titularidad",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Servicios_complementarios/{Servicios_complementarios}" : {
+      "get" : {
+        "summary" : "GET Servicios_complementarios",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getServicios_complementarios",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "Biblioteca; Laboratorio/Taller; Ingles; FONDOS SOCIALES EUROPEOS",
+          "in" : "path",
+          "name" : "Servicios_complementarios",
+          "description" : "Servicios_complementarios",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Codigo/{Codigo}" : {
+      "get" : {
+        "summary" : "GET Codigo",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getCodigo",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "46019155",
+          "in" : "path",
+          "name" : "Codigo",
+          "description" : "Codigo",
+          "type" : "integer",
+          "required" : true
+        } ]
+      }
+    },
+    "/Direccion/{Direccion}" : {
+      "get" : {
+        "summary" : "GET Direccion",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getDireccion",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "Calle SOLANO, 1",
+          "in" : "path",
+          "name" : "Direccion",
+          "description" : "Direccion",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Nombre/{Nombre}" : {
+      "get" : {
+        "summary" : "GET Nombre",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getNombre",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "CENTRO PUBLICO DE FORMACION DE PERSONAS ADULTAS JAIME I",
+          "in" : "path",
+          "name" : "Nombre",
+          "description" : "Nombre",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Localidad/{Localidad}" : {
+      "get" : {
+        "summary" : "GET Localidad",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getLocalidad",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "46140 - ADEMUZ",
+          "in" : "path",
+          "name" : "Localidad",
+          "description" : "Localidad",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/Latitud/{Latitud}" : {
+      "get" : {
+        "summary" : "GET Latitud",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getLatitud",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "40,060148",
+          "in" : "path",
+          "name" : "Latitud",
+          "description" : "Latitud",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    },
+    "/CIF/{CIF}" : {
+      "get" : {
+        "summary" : "GET CIF",
+        "produces" : [ "application/json", "text/html" ],
+        "operationId" : "getCIF",
+        "description" : "Use value 'all' in a parameter for non-empty values",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "type" : "string"
+            },
+            "description" : "successful operation"
+          }
+        },
+        "parameters" : [ {
+          "default" : "10000",
+          "in" : "query",
+          "name" : "limit",
+          "description" : "Maximum number of results",
+          "type" : "integer"
+        }, {
+          "default" : "0",
+          "in" : "query",
+          "name" : "offset",
+          "description" : "Starting index for results",
+          "type" : "integer"
+        }, {
+          "in" : "query",
+          "name" : "visualisation",
+          "description" : "Visualisation of the data via charts",
+          "type" : "string"
+        }, {
+          "default" : "Q9655229D",
+          "in" : "path",
+          "name" : "CIF",
+          "description" : "CIF",
+          "type" : "string",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "host" : "localhost:8080",
+  "schemes" : [ "http" ],
+  "definitions" : {
+    "mainComponent" : {
+      "xml" : {
+        "name" : "mainComponent"
+      },
+      "type" : "object",
+      "properties" : {
+        "Nombre" : {
+          "type" : "string",
+          "example" : "CENTRO PUBLICO DE FORMACION DE PERSONAS ADULTAS JAIME I"
+        },
+        "CIF" : {
+          "type" : "string",
+          "example" : "Q9655229D"
+        },
+        "Email" : {
+          "type" : "string",
+          "example" : "46019155@edu.gva.es"
+        },
+        "Codigo" : {
+          "type" : "integer",
+          "example" : 46019155
+        },
+        "Longitud" : {
+          "type" : "string",
+          "example" : "-1,285779"
+        },
+        "Comarca" : {
+          "type" : "string",
+          "example" : "EL RINCON DE ADEMUZ"
+        },
+        "Latitud" : {
+          "type" : "string",
+          "example" : "40,060148"
+        },
+        "Localidad" : {
+          "type" : "string",
+          "example" : "46140 - ADEMUZ"
+        },
+        "Titularidad" : {
+          "type" : "string",
+          "example" : "GENERALITAT VALENCIANA"
+        },
+        "Servicios_complementarios" : {
+          "type" : "string",
+          "example" : "Biblioteca; Laboratorio/Taller; Ingles; FONDOS SOCIALES EUROPEOS"
+        },
+        "Regimen" : {
+          "type" : "string",
+          "example" : "PUBLICO"
+        },
+        "Web" : {
+          "type" : "string",
+          "example" : "http://mestreacasa.gva.es/web/4601915500"
+        },
+        "Telefono" : {
+          "type" : "integer",
+          "example" : 978787000
+        },
+        "Direccion" : {
+          "type" : "string",
+          "example" : "Calle SOLANO, 1"
+        },
+        "Fax" : {
+          "type" : "integer",
+          "example" : 978787001
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Obtaining the dataset",
+    "title" : "dataset",
+    "version" : "1.0.0"
+  }
+}

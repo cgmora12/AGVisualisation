@@ -1,0 +1,765 @@
+---
+swagger: "2.0"
+info:
+  description: "Accediendo a datos educativos"
+  version: "1.0.0"
+  title: "Datos Educativos"
+host: "wake.dlsi.ua.es"
+basePath: "/Educacion"
+schemes:
+- "https"
+paths:
+  /:
+    get:
+      summary: "GET educational dataset"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getdataset"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Codigo"
+        in: "query"
+        description: "Codigo"
+        required: false
+        type: "integer"
+      - name: "Nombre"
+        in: "query"
+        description: "Nombre"
+        required: false
+        type: "string"
+      - name: "Regimen"
+        in: "query"
+        description: "Regimen"
+        required: false
+        type: "string"
+      - name: "Direccion"
+        in: "query"
+        description: "Direccion"
+        required: false
+        type: "string"
+      - name: "Localidad"
+        in: "query"
+        description: "Localidad"
+        required: false
+        type: "string"
+      - name: "Telefono"
+        in: "query"
+        description: "Telefono"
+        required: false
+        type: "integer"
+      - name: "Fax"
+        in: "query"
+        description: "Fax"
+        required: false
+        type: "integer"
+      - name: "Latitud"
+        in: "query"
+        description: "Latitud"
+        required: false
+        type: "string"
+      - name: "Longitud"
+        in: "query"
+        description: "Longitud"
+        required: false
+        type: "string"
+      - name: "Titularidad"
+        in: "query"
+        description: "Titularidad"
+        required: false
+        type: "string"
+      - name: "CIF"
+        in: "query"
+        description: "CIF"
+        required: false
+        type: "string"
+      - name: "Comarca"
+        in: "query"
+        description: "Comarca"
+        required: false
+        type: "string"
+      - name: "Email"
+        in: "query"
+        description: "Email"
+        required: false
+        type: "string"
+      - name: "Web"
+        in: "query"
+        description: "Web"
+        required: false
+        type: "string"
+      - name: "Servicios_complementarios"
+        in: "query"
+        description: "Servicios_complementarios"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /CIF/{CIF}:
+    get:
+      summary: "GET CIF"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getCIF"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "CIF"
+        in: "path"
+        description: "CIF"
+        required: true
+        type: "string"
+        default: "Q9655229D"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Codigo/{Codigo}:
+    get:
+      summary: "GET Codigo"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getCodigo"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Codigo"
+        in: "path"
+        description: "Codigo"
+        required: true
+        type: "integer"
+        default: 46019155
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Comarca/{Comarca}:
+    get:
+      summary: "GET Comarca"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getComarca"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Comarca"
+        in: "path"
+        description: "Comarca"
+        required: true
+        type: "string"
+        default: "EL RINCON DE ADEMUZ"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Direccion/{Direccion}:
+    get:
+      summary: "GET Direccion"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getDireccion"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Direccion"
+        in: "path"
+        description: "Direccion"
+        required: true
+        type: "string"
+        default: "Calle SOLANO,1"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Email/{Email}:
+    get:
+      summary: "GET Email"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getEmail"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Email"
+        in: "path"
+        description: "Email"
+        required: true
+        type: "string"
+        default: "46019155@edu.gva.es"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Fax/{Fax}:
+    get:
+      summary: "GET Fax"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getFax"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Fax"
+        in: "path"
+        description: "Fax"
+        required: true
+        type: "integer"
+        default: 978787001
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Latitud/{Latitud}:
+    get:
+      summary: "GET Latitud"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getLatitud"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Latitud"
+        in: "path"
+        description: "Latitud"
+        required: true
+        type: "string"
+        default: "40,060148"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Localidad/{Localidad}:
+    get:
+      summary: "GET Localidad"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getLocalidad"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Localidad"
+        in: "path"
+        description: "Localidad"
+        required: true
+        type: "string"
+        default: "46140 - ADEMUZ"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Longitud/{Longitud}:
+    get:
+      summary: "GET Longitud"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getLongitud"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Longitud"
+        in: "path"
+        description: "Longitud"
+        required: true
+        type: "string"
+        default: "-1,285779"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Nombre/{Nombre}:
+    get:
+      summary: "GET Nombre"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getNombre"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Nombre"
+        in: "path"
+        description: "Nombre"
+        required: true
+        type: "string"
+        default: "CENTRO PUBLICO DE FORMACION DE PERSONAS ADULTAS JAIME I"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Regimen/{Regimen}:
+    get:
+      summary: "GET Regimen"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getRegimen"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Regimen"
+        in: "path"
+        description: "Regimen"
+        required: true
+        type: "string"
+        default: "PUBLICO"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Servicios_complementarios/{Servicios_complementarios}:
+    get:
+      summary: "GET Servicios_complementarios"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getServicios_complementarios"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Servicios_complementarios"
+        in: "path"
+        description: "Servicios_complementarios"
+        required: true
+        type: "string"
+        default: "Biblioteca; Laboratorio/Taller; Ingles; FONDOS SOCIALES EUROPEOS"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Telefono/{Telefono}:
+    get:
+      summary: "GET Telefono"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getTelefono"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Telefono"
+        in: "path"
+        description: "Telefono"
+        required: true
+        type: "integer"
+        default: 978787000
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Titularidad/{Titularidad}:
+    get:
+      summary: "GET Titularidad"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getTitularidad"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Titularidad"
+        in: "path"
+        description: "Titularidad"
+        required: true
+        type: "string"
+        default: "GENERALITAT VALENCIANA"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /Web/{Web}:
+    get:
+      summary: "GET Web"
+      description: "Use value 'all' in a parameter for non-empty values"
+      operationId: "getWeb"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      - name: "visualisation"
+        in: "query"
+        description: "Visualisation of the data via charts"
+        required: false
+        type: "string"
+      - name: "Web"
+        in: "path"
+        description: "Web"
+        required: true
+        type: "string"
+        default: "http://mestreacasa.gva.es/web/4601915500"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+  /visualisation:
+    get:
+      summary: "GET visualisation charts"
+      description: "Get visualisation charts of the data"
+      operationId: "getvisualisation"
+      produces:
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of results"
+        required: false
+        type: "integer"
+        default: 10000
+      - name: "offset"
+        in: "query"
+        description: "Starting index for results"
+        required: false
+        type: "integer"
+        default: 0
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+      x-swagger-router-controller: "Default"
+definitions:
+  mainComponent:
+    type: "object"
+    properties:
+      Nombre:
+        type: "string"
+        example: "CENTRO PUBLICO DE FORMACION DE PERSONAS ADULTAS JAIME I"
+      CIF:
+        type: "string"
+        example: "Q9655229D"
+      Email:
+        type: "string"
+        example: "46019155@edu.gva.es"
+      Codigo:
+        type: "integer"
+        example: 46019155
+      Longitud:
+        type: "string"
+        example: "-1,285779"
+      Comarca:
+        type: "string"
+        example: "EL RINCON DE ADEMUZ"
+      Latitud:
+        type: "string"
+        example: "40,060148"
+      Localidad:
+        type: "string"
+        example: "46140 - ADEMUZ"
+      Titularidad:
+        type: "string"
+        example: "GENERALITAT VALENCIANA"
+      Servicios_complementarios:
+        type: "string"
+        example: "Biblioteca; Laboratorio/Taller; Ingles; FONDOS SOCIALES EUROPEOS"
+      Regimen:
+        type: "string"
+        example: "PUBLICO"
+      Web:
+        type: "string"
+        example: "http://mestreacasa.gva.es/web/4601915500"
+      Telefono:
+        type: "integer"
+        example: 978787000
+      Direccion:
+        type: "string"
+        example: "Calle SOLANO,1"
+      Fax:
+        type: "integer"
+        example: 978787001
+    xml:
+      name: "mainComponent"
